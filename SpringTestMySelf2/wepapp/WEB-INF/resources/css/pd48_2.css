@@ -1,0 +1,194 @@
+charset "UTF-8";
+div{
+display:black;
+}
+#wrap{
+position: relative;
+    width: 100%;
+    min-width: 980px;
+    margin: 0 auto;
+    min-width: 1289px;
+
+}
+#topLineBlack{
+height:30px;
+background-color:black;
+}
+#header{
+    clear: both;
+    height: 300px;
+    background:url(http://produce48.mnet.com/images/bg_header_02.png) no-repeat center 0;
+}
+
+#header h1 img {
+    display: block;
+    width: 262px;
+    height: 175px;
+    background: url(../images/logo.png) no-repeat left bottom;
+}
+#header .inner_wrap {
+    width: 980px;
+    margin: 0 auto;
+}
+.inner_wrap {
+    position: relative;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding-top:70px;
+}
+
+.snsBtn {
+    position: absolute;
+    top: 40px;
+    right: 330px;
+}
+.snsBtn a {display:block;float:left;width:19px;height:20px;margin-left:33px;text-indent:-9999px;background:
+/*snsBtn의 a태그의 속성*/
+url(http://produce48.mnet.com/images/img_sns.png) no-repeat;}
+.snsBtn a.btn_f {background-position:0 -31px ;}
+.snsBtn a.btn_t {background-position:-53px -31px;}
+.snsBtn a.btn_i {background-position:-107px -31px;}
+.snsBtn a.btn_f:hover {background-position:0 0;}
+.snsBtn a.btn_t:hover {background-position:-53px 0;}
+.snsBtn a.btn_i:hover {background-position:-107px 0;}
+.navi {
+    position: absolute;
+    top: 280px;
+    left: 130px;
+    width: 980px;
+    height: 42px;
+    list-style:none;
+}
+.block1{
+	position: relative;
+    float: left;
+    padding: 0 30px;
+    background: url(http://produce48.mnet.com/images/header_line.png) no-repeat right 0;
+    overflow: visible;
+    font-weight: normal;
+    cursor:pointer;
+	
+}
+.title{
+	padding: 50px 0 40px 0;
+	margin-top:40px;
+	background:url(http://produce48.mnet.com/images/main_top_info.png)no-repeat center 0;
+}
+#showVote{
+	position:fixed;
+	width:100px;
+	height:550px;
+	left:20px;
+	border:1px solid gray;
+	top:350px;
+}
+#showVote .myVote{
+	width:100px;
+	height:50px;
+	background:url(http://produce48.mnet.com/images/bgH3MyVote_new.jpg)no-repeat;
+	z-index:100;
+}
+.name2{
+	font-size:2;
+}
+#box ul{ position: relative;
+    background: #fff;
+    width: 100px;
+    max-height: 373px;
+    box-sizing: border-box;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding:0;
+    margin:0;
+    overflow: hidden;
+	list-style: none;
+	top:50px;}
+#box ul li{
+    position: relative;
+    text-align: center;
+    margin-bottom: 9px;
+	list-style: none;
+}
+.vote{
+    display: block;
+    width: 58px;
+    height: 58px;
+    margin: 0 auto;
+	background:url(http://produce48.mnet.com/images/mask_line58_bg.png)no-repeat 0 0;
+}
+#circle{
+    min-height: 600px;
+    position: absolute;
+    left: 146px;
+}
+#circle ul {
+    overflow: hidden;
+    margin-top: -12px;
+    padding: 44px 0 0 0;
+	list-style: none;
+	margin-bottom: -10px;
+	}
+li{
+	list-style: none;
+}
+	
+#circle ul li {
+    float: left;
+    width: 155px;
+    text-align: center;
+    padding: 0 0 5px 10px;
+	list-style: none;
+}
+#circle li .thumb {
+    position: relative;
+    min-height: 150px;
+}
+
+.th{
+	   position: relative;
+    min-height: 150px;
+}
+ .name {
+    display: block;
+    margin: 6px 0 3px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #222;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#circle li .thumb .mask_vote {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 156px;
+    height: 156px;
+    background: url(http://produce48.mnet.com/images/mask_vote2.png) no-repeat 0 0;
+}
+
+.mask_vote{
+	display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 156px;
+    height: 156px;
+    background: url(http://produce48.mnet.com/images/mask_vote2.png) no-repeat 0 0;
+    background-position:0px 0px;
+}
+.mask_vote:hover{background-position:0px -155px;}
+
+#circle li .thumb  img {
+    width: 156px;
+    height: 156px;
+}
+
+a {text-decoration: noone;color: black;}
+a:link{text-decoration: none;}
+a:visited{text-decoration: none;}
+a:hover{cursor: pointer; color:red;}

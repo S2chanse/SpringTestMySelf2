@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="main">
+   <resultMap id="rankInfo" type="com.spring.main.vo.MainVo">
+  		<result property="rankNum" 	  	 column="RANKNUM" 			javaType="int"/>
+  		<result property="chalId"   column="CHALID"   	javaType="String"/>
+  		<result property="voteNum"  	 column="VOTENUM"     	javaType="int"/>
+  		<result property="chalName" 	 column="CHALNAME" 			javaType="String"/>	
+   </resultMap>
+ 	<insert id="insertVote" statementType="CALLABLE"  parameterType="hashmap">
+ 		{Call PKG_CHAL.INSERT_VOTE(
+ 			#{name,mode=IN,jdbcType=VARCHAR}
+ 		)}
+ 	</insert>
+
+ 	<select id="rankList" statementType="CALLABLE" parameterType="hashmap"
+ 	resultType="com.spring.main.vo.MainVo">
+ 		{Call PKG_CHAL.RANK_LIST(
+ 		#{result,mode=OUT,jdbcType=CURSOR,javaType=ResultSet,resultMap=rankInfo}
+ 		)}
+ 	</select>
+ </mapper>
